@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Edit Sale</title>
+</head>
+<body>
+    <h1>Edit Sale</h1>
+
+    <form method="post">
+        <label>Product</label><br>
+        <input type="text" name="product" value="{{ sale.product }}" required><br><br>
+
+        <label>Quantity</label><br>
+        <input type="number" name="quantity" value="{{ sale.quantity }}" required><br><br>
+
+        <label>Price</label><br>
+        <input type="number" step="0.01" name="price" value="{{ sale.price }}" required><br><br>
+
+        <button type="submit">Save</button>
+        <a href="/">Cancel</a>
+    </form>
+</body>
+</html>
